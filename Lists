@@ -1,0 +1,26 @@
+"""
+This solution needs to be smarter but I could not do so cause I was in a bit hurry.
+the solution I thought say there would be a dictionary of command keys and executions. and the commands would be 
+executed according to the keys................... anyway feel free to optimise and comment. Coming with smarter one soon :D 
+"""
+num_commands = input("")
+list = []
+for commands in xrange(num_commands):
+    commands = raw_input().split()
+    if commands[0] == 'append':
+        list.append(int(commands[1]))
+    elif commands[0] == 'insert':
+        list.insert(int(commands[1]), int(commands[2]))
+    elif commands[0] == 'remove':
+        list.remove(int(int(commands[1])))
+    elif commands[0] == 'sort':
+        list.sort()
+    elif commands[0] == 'remove':
+        list.remove(int(commands[1]))
+    elif commands[0] == 'print':
+        print list
+    elif commands[0] == 'reverse':
+        list.reverse()
+    elif commands[0] == 'pop':
+        popped = list.pop()
+

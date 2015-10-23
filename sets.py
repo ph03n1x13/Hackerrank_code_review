@@ -16,5 +16,5 @@ out_lst2 = map(int, out2)
 dif_list = out_lst1+out_lst2
 a = sorted(dif_list)
 #print a
-for i in xrange(len(a)):
-    print a[i]
+for i in a:
+    print i
